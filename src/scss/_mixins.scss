@@ -14,6 +14,7 @@
     font-size: 3.6rem;
     font-weight: 700;
     line-height: 4.8rem;
+    margin-bottom: 3.2rem;
     text-align: center;
 }
 
@@ -22,6 +23,7 @@
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 3.2rem;
+    text-align: center;
 }
 
 @mixin link-text {
@@ -32,6 +34,7 @@
 @mixin link-mail-container {
     display: flex;
     justify-content: center;
+    margin-top:6rem;
 }
 
 @mixin link-mail {
@@ -41,8 +44,15 @@
     display: block;
     font-size: 2rem;
     font-weight: 700;
-    margin-top: 4.8rem;
     padding: 1.6rem 3rem;
     text-align: center;
 }
 
+@mixin link-icon {
+    background-color: $white;
+    border-radius: 50%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    height: 4.8rem;
+    margin: 0 1.2rem;
+    padding: 1.2rem;
+}

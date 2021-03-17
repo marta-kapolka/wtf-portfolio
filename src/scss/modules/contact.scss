@@ -1,0 +1,23 @@
+.contact {
+    @include section-mobile-layout;
+    background-color: $light-blue;
+    &__title {
+        @include mobile-grid-element-width;
+        @include section-title-text;
+    }
+    &__description {
+        @include mobile-grid-element-width;
+        @include regular-text;
+    }
+    &__link-container {
+        @include mobile-grid-element-width;
+        @include link-mail-container;
+    }
+    &__mail {
+        @include link-mail;
+    }
+    &__icon {
+        @include link-icon;
+    }
+}
+
