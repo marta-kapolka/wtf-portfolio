@@ -5,6 +5,18 @@
     padding: 6.4rem 1.6rem 8.8rem;
 }
 
+@mixin mobile-grid-element-width {
+    grid-column: 1 / 5;
+}
+
+@mixin section-title-text {
+    color: $text-dark;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    text-align: center;
+}
+
 @mixin regular-text {
     color: $text-default;
     font-size: 1.6rem;
@@ -34,6 +46,3 @@
     text-align: center;
 }
 
-@mixin mobile-grid-element-width {
-    grid-column: 1 / 5;
-}

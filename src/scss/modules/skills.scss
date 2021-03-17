@@ -3,8 +3,55 @@
     background-color: $blue;
     &__title {
         @include mobile-grid-element-width;
+        @include section-title-text;
+        color: $white;
     }
 }
 .skill {
     @include mobile-grid-element-width;
+    margin-top: 6.4rem;
+    &::before {
+        content: '🤔';
+        display: block;
+        font-size: 6.4rem;
+        text-align: center;
+    }
+    &:first-of-type::before {
+        content: '💪'
+    }
+    &:last-of-type::before {
+        content: '🎓'
+    }
+    &__title {
+        color: $white;
+        font-size: 2.4rem;
+        line-height: 4.4rem;
+        margin-top: 1.6rem;
+        text-align: center;
+    }
+    & .list__item::before {
+        content: url(../assets/svg/white-tick.svg);
+        position: absolute;
+        left: -2.4rem;
+    }
+    &:first-of-type .list__item::before {
+        content: url(../assets/svg/green-tick.svg);
+    }
+    &:last-of-type .list__item::before {
+        content: url(../assets/svg/white-bullet.svg);
+        bottom: .4rem;
+    }
+}
+.list {
+    
+    list-style: none;
+    margin-top: 2.4rem;
+&__item {
+    color: $white;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 4rem;
+    margin-left: 2.4rem;
+    position: relative;
+}
 }
