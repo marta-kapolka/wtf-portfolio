@@ -1,0 +1,10 @@
+.skills {
+    @include section-mobile-layout;
+    background-color: $blue;
+    &__title {
+        @include mobile-grid-element-width;
+    }
+}
+.skill {
+    @include mobile-grid-element-width;
+}

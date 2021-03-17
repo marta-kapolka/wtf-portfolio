@@ -1,0 +1,39 @@
+@mixin section-mobile-layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1.6rem;
+    padding: 6.4rem 1.6rem 8.8rem;
+}
+
+@mixin regular-text {
+    color: $text-default;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 3.2rem;
+}
+
+@mixin link-text {
+    color: $link;
+    font-weight: 700;
+}
+
+@mixin link-mail-container {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin link-mail {
+    background-color: $link;
+    border-radius: 3rem;
+    color: $white;
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 4.8rem;
+    padding: 1.6rem 3rem;
+    text-align: center;
+}
+
+@mixin mobile-grid-element-width {
+    grid-column: 1 / 5;
+}
