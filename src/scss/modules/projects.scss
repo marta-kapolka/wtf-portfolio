@@ -1,0 +1,79 @@
+.projects {
+  @include section-mobile-layout;
+  &__title {
+    @include mobile-grid-element-width;
+    @include section-title-text;
+  }
+  &__description {
+    @include mobile-grid-element-width;
+    @include regular-text;
+  }
+}
+
+.project {
+  @include mobile-grid-element-width;
+  margin-top: 2.4rem;
+  &__top-container {
+    background-color: $grey1;
+    border-top-left-radius: 1.6rem;
+    border-top-right-radius: 1.6rem;
+    display: flex;
+    height: 4rem;
+    justify-content: flex-start;
+    padding-left: 0.6rem;
+  }
+  &__main-container {
+    background-color: $grey2;
+    border-bottom-left-radius: 1.6rem;
+    border-bottom-right-radius: 1.6rem;
+    padding: 2.4rem 2rem;
+    &::before {
+      content: url(../assets/svg/github-white.svg);
+    }
+  }
+  &__description {
+    color: $grey5;
+    font-family: $code-font;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 2.4rem;
+    padding: 0.4rem;
+
+    &:first-child {
+      margin-top: 2rem;
+    }
+    & > :last-child {
+      margin-left: 1rem;
+    }
+  }
+  &__label {
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    width: 10rem;
+  }
+  &__name {
+    @include project-description-alignment;
+    color: $white;
+    font-weight: 600;
+  }
+  &__details {
+    @include project-description-alignment;
+  }
+  &__link {
+    @include project-description-alignment;
+    color: $text-blue;
+    text-decoration: underline;
+    &::before {
+      content: "<";
+      @include project-code-symbols-position;
+    }
+    &::after {
+      content: ">";
+      @include project-code-symbols-position;
+    }
+  }
+  &:first-of-type {
+    margin-top: 4.6rem;
+  }
+}
