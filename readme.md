@@ -4,9 +4,9 @@
 
 My personal protfolio presenting my previous projects.
 
-<!-- LIVE: [Puchar Województwa Śląskiego w MnO](http://www.pucharino.slask.pl/)
+<!-- LIVE: [Puchar Województwa Śląskiego w MnO](http://www.pucharino.slask.pl/) -->
 
-![page preview](/src/assets/img/pws_screen.gif) -->
+![no page preview](/src/assets/img/work-in-progress.png)
 
 ## Technologies used
 
