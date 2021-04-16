@@ -1,0 +1,15 @@
+.main-title {
+  color: $dark-text-color;
+  font-size: $l-text-size;
+  font-weight: $font-thick;
+  text-align: center;
+  &--special {
+    color: $main-color;
+  }
+}
+
+@media (min-width: $large) {
+  .main-title {
+    font-size: $xl-text-size;
+  }
+}

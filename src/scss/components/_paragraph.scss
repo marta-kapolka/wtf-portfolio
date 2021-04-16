@@ -1,0 +1,17 @@
+.paragraph {
+  color: $default-text-color;
+  font-size: $xs-text-size;
+  line-height: 3.2rem;
+  padding: 3.2rem 0 5.6rem 0;
+  text-align: center;
+  &--link {
+    color: $text-link-color;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: $large) {
+  .paragraph {
+    font-size: $s-text-size;
+  }
+}

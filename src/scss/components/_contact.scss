@@ -1,0 +1,15 @@
+.contact {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 16rem;
+}
+
+@media (min-width: $large) {
+  .contact {
+    flex-direction: row;
+    height: auto;
+    width: 58rem;
+  }
+}

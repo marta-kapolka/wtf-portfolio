@@ -1,0 +1,70 @@
+%skills-before-styling {
+  display: block;
+  font-size: $skills-icon-text-size;
+  text-align: center;
+}
+%skills-item-before-styling {
+  left: -2.4rem;
+  position: absolute;
+}
+.skill-list {
+  max-width: 30rem;
+  padding-top: 6.4rem;
+  width: 100%;
+
+  &--working {
+    &::before {
+      @extend %skills-before-styling;
+      content: "💪";
+    }
+  }
+  &--know-something {
+    &::before {
+      @extend %skills-before-styling;
+      content: "🤔";
+    }
+  }
+  &--want-to-learn {
+    &::before {
+      @extend %skills-before-styling;
+      content: "🎓";
+    }
+  }
+  &--title {
+    color: $neutral;
+    font-size: $m-text-size;
+    font-weight: $font-thick;
+    padding: 1.6rem 0 2.4rem 0;
+    text-align: center;
+  }
+  &--list {
+    color: $neutral;
+    font-size: $xs-text-size;
+    list-style: none;
+    position: relative;
+  }
+  &--item {
+    margin-left: 2.4rem; // same as ::before left property
+    padding: 1.2rem 0;
+    position: relative;
+  }
+  &--working-item {
+    &::before {
+      @extend %skills-item-before-styling;
+      content: url(../assets/svg/green-tick.svg);
+    }
+  }
+  &--know-something-item {
+    &::before {
+      @extend %skills-item-before-styling;
+      content: url(../assets/svg/white-tick.svg);
+    }
+  }
+  &--want-to-learn-item {
+    &::before {
+      @extend %skills-item-before-styling;
+      content: url(../assets/svg/white-bullet.svg);
+      bottom: $xs-text-size; // same as skill-list--item font size
+    }
+  }
+}

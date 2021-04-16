@@ -1,0 +1,100 @@
+.project {
+  background-color: $article-color-2;
+  border-radius: 1.6rem;
+  color: $article-color-4;
+  font-family: $code-font;
+  font-size: $xxs-text-size;
+  font-weight: $font-thin;
+  line-height: 2.4rem;
+  margin-bottom: 2.4rem;
+  max-width: 58rem;
+  padding: 0 $article-base-padding (3 * $article-base-padding)
+    $article-base-padding;
+  position: relative;
+  width: 100%;
+  &::before {
+    background-color: $article-color-1;
+    border-top-left-radius: 1.6rem;
+    border-top-right-radius: 1.6rem;
+    content: url(../assets/svg/dots.svg);
+    display: block;
+    line-height: 0;
+    left: 0;
+    padding: $article-base-padding;
+    position: absolute;
+    width: 100%;
+  }
+  %description-alignment {
+    display: inline-block;
+    width: calc(100% - 10rem); // (project width) - (project--label width)
+  }
+
+  &--svg-template {
+    display: none;
+  }
+  &--icon {
+    margin-bottom: (0.75 * $article-base-padding);
+    margin-top: (1.5 * $article-base-padding) + 4rem; // (visible margin) + (::before height)
+  }
+  &--description {
+    padding: 0.6rem 0;
+  }
+  &--label {
+    display: inline-block;
+    font-size: $xxs-text-size;
+    padding-right: 0.6rem;
+    text-align: right;
+    vertical-align: top;
+    width: 10rem;
+  }
+  &--title {
+    @extend %description-alignment;
+    color: $neutral;
+    font-size: $xxs-text-size;
+    font-weight: $font-thick;
+  }
+  &--details {
+    @extend %description-alignment;
+    color: $article-color-5;
+  }
+  %link-decoration {
+    color: $article-color-4;
+    display: inline-block;
+  }
+  &--link {
+    @extend %description-alignment;
+    color: $article-link-color;
+    text-decoration: underline;
+    &::before {
+      @extend %link-decoration;
+      content: "<";
+    }
+    &::after {
+      @extend %link-decoration;
+      content: ">";
+    }
+  }
+}
+
+@media (min-width: $large) {
+  .project {
+    %description-large-screen-alignment {
+      width: calc(100% - 14rem); // (project width) - (project--label width)
+    }
+    font-size: $xs-text-size;
+    &--label {
+      font-size: $xs-text-size;
+      width: 14rem;
+    }
+    &--title {
+      @extend %description-large-screen-alignment;
+      font-size: $xs-text-size;
+    }
+    &--details {
+      @extend %description-large-screen-alignment;
+    }
+    &--link {
+      @extend %description-large-screen-alignment;
+    }
+  }
+}

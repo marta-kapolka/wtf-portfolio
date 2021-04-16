@@ -1,0 +1,38 @@
+%l-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 6.4rem 1.6rem 8.8rem 1.6rem;
+}
+
+.l-section--hero {
+  @extend %l-section;
+  background-color: $neutral;
+}
+
+.l-section--skills {
+  @extend %l-section;
+  background-color: $main-color;
+}
+
+.l-section--projects {
+  @extend %l-section;
+  background-color: $neutral;
+}
+
+.l-section--contact {
+  @extend %l-section;
+  background-color: $light-color;
+}
+
+@media (min-width: $medium) {
+  %l-section {
+    padding: 6rem 6.4rem 8.8rem 6.4rem;
+  }
+}
+
+@media (min-width: $large) {
+  %l-section {
+    padding: 8rem 12.8rem 17.6rem 12.8rem;
+  }
+} ;

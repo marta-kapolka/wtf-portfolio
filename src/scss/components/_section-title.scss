@@ -1,0 +1,15 @@
+.section-title {
+  color: $dark-text-color;
+  font-size: $xxl-text-size;
+  font-weight: $font-thick;
+  text-align: center;
+  &--light {
+    color: $neutral;
+  }
+}
+
+@media (min-width: $large) {
+  .section-title {
+    font-size: $xxxl-text-size;
+  }
+}

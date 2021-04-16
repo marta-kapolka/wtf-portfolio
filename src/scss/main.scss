@@ -1,39 +1,5 @@
-@import "~normalize.css";
-
-@import "_mixins";
-@import "_variables";
-@import "modules/hero.scss";
-@import "modules/skills.scss";
-@import "modules/projects.scss";
-@import "modules/contact.scss";
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-family: $main-font;
-  font-size: 62.5%;
-  scroll-behavior: auto;
-}
-
-body {
-  box-sizing: border-box;
-}
-
-a {
-  // color: $black;
-  text-decoration: none;
-}
-
-// MEDIA
-
-@media (min-width: 1024px) {
-  html {
-    scroll-behavior: smooth;
-  }
-}
+@import "abstracts/__abstracts-dir.scss";
+@import "base/__base-dir.scss";
+@import "components/__components-dir.scss";
+@import "layouts/__layouts-dir.scss";
+@import "vendor/__vendor-dir.scss";

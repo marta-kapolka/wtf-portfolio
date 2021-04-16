@@ -1,0 +1,13 @@
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+@media (min-width: $large) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
