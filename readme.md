@@ -1,38 +1,34 @@
-# Portfolio - _work in progress_
+# Portfolio
 
 ---
 
-My personal protfolio presenting my previous projects.
+My personal portfolio presenting my previous projects.
 
-<!-- LIVE: [Puchar Województwa Śląskiego w MnO](http://www.pucharino.slask.pl/) -->
+LIVE: [Portfolio - Marta Kapołka](marta-kapolka.github.io/wtf-portfolio/)
 
-![no page preview](/src/assets/img/work-in-progress.png)
+![page preview](/src/assets/img/portfolio_screen.png)
 
-## Technologies used
+## Tools and technologies used
 
 - HTML5
 - CSS3 (SCSS)
 - JavaScript
+- working with API
 
-<!-- ## More about the project
+## More about the project
 
 ### Goal
 
-I wanted to create **responsive** one page website with **clear structure** and easly **findable information**.
+The goal was to build website according to given graphic design.
+Website contains list of my current development skills and presents projects I've made so far. All the projects details are provided using github API.
 
 ### Main objectives
 
 - build proper **semantic structure**
 - make website **fully responsive**
 - use **mobie first** design
-
-### Challenges
-
-The biggest challenge I conquered was to **build a responsive table** presenting the calendar of events for current year. The main problem was to present **dwo dimensional data** on narrow **mobile screen**.
-
-In the table each record contains all the details about an event - name, date, location, organiser and so on. In mobile version I decided to group all the details of each event and present them in kind of an **accordion form**, preserving the HTML table structure. Table headers in each accordion field are provided in CSS as `::before` element to avoid multiplying content and accessibility issues.
-
-![table preview](/src/assets/img/table_preview.png) -->
+- practice **working with API**
+- use **SMACSS** methodology
 
 ## Credits
 
