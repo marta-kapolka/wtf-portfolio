@@ -23,10 +23,6 @@
     position: absolute;
     width: 100%;
   }
-  %description-alignment {
-    display: inline-block;
-    width: calc(100% - 10rem); // (project width) - (project--label width)
-  }
 
   &--svg-template {
     display: none;
@@ -35,33 +31,23 @@
     margin-bottom: (0.75 * $article-small-padding);
     margin-top: (1.5 * $article-small-padding) + 4rem; // (visible margin) + (::before height)
   }
-  &--description {
-    padding: 0.6rem 0;
-  }
   &--label {
-    display: inline-block;
-    font-size: $xxs-text-size;
-    padding-right: 0.6rem;
     text-align: right;
-    vertical-align: top;
-    width: 10rem;
   }
   &--title {
-    @extend %description-alignment;
     color: $neutral;
     font-size: $xxs-text-size;
     font-weight: $font-thick;
   }
-  &--details {
-    @extend %description-alignment;
+  &--description {
     color: $article-color-5;
+    padding-bottom: 2rem;
   }
   %link-decoration {
     color: $article-color-4;
     display: inline-block;
   }
   &--link {
-    @extend %description-alignment;
     color: $article-link-color;
     text-decoration: underline;
     &::before {
@@ -81,25 +67,14 @@
 
 @media (min-width: $large) {
   .project {
-    %description-large-screen-alignment {
-      width: calc(100% - 14rem); // (project width) - (project--label width)
-    }
     font-size: $xs-text-size;
     padding: 0 $article-large-padding ($article-large-padding + 1rem)
       $article-large-padding;
     &--label {
       font-size: $xs-text-size;
-      width: 14rem;
     }
     &--title {
-      @extend %description-large-screen-alignment;
       font-size: $xs-text-size;
-    }
-    &--details {
-      @extend %description-large-screen-alignment;
-    }
-    &--link {
-      @extend %description-large-screen-alignment;
     }
   }
 }

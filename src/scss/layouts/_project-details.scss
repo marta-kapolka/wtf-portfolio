@@ -1,0 +1,17 @@
+.l-project-details {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  gap: 0.8rem;
+}
+
+@media (min-width: $medium) {
+  .l-project-details {
+    grid-template-columns: 11rem 1fr;
+  }
+}
+
+@media (min-width: $large) {
+  .l-project-details {
+    grid-template-columns: 12rem 1fr;
+  }
+}
