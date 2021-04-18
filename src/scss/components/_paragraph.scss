@@ -10,6 +10,7 @@
     font-weight: 700;
     position: relative;
     transition: all 0.2s ease-in-out;
+    white-space: nowrap;
     &::before {
       content: "";
       background-color: $main-color;
