@@ -1,0 +1,11 @@
+.l-hero-image {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+@media (min-width: $large) {
+  .l-hero-image {
+    width: 68rem;
+  }
+}

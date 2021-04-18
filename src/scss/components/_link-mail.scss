@@ -7,4 +7,15 @@
   font-size: $s-text-size;
   font-weight: $font-thick;
   padding: 0.6em 1.2em;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: $neutral;
+    filter: drop-shadow(0px 3px 0 $dark-text-color);
+    color: $dark-text-color;
+  }
+  &--darker-background {
+    &:hover {
+      background-color: $light-color;
+    }
+  }
 }

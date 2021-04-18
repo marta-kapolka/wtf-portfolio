@@ -1,0 +1,9 @@
+@media (min-width: $huge) {
+  .l-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 160rem;
+    width: 100%;
+  }
+}

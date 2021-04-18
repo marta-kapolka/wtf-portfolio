@@ -68,3 +68,11 @@
     }
   }
 }
+
+@media (min-width: $huge) {
+  .skill-list {
+    &--list {
+      padding-left: 3.6rem;
+    }
+  }
+}

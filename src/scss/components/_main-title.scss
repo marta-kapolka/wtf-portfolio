@@ -2,6 +2,8 @@
   color: $dark-text-color;
   font-size: $l-text-size;
   font-weight: $font-thick;
+  max-width: 86rem;
+  padding-top: 4rem;
   text-align: center;
   &--special {
     color: $main-color;

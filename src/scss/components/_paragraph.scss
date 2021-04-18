@@ -2,11 +2,37 @@
   color: $default-text-color;
   font-size: $xs-text-size;
   line-height: 3.2rem;
+  max-width: 80rem;
   padding: 3.2rem 0 5.6rem 0;
   text-align: center;
   &--link {
     color: $text-link-color;
     font-weight: 700;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    &::before {
+      content: "";
+      background-color: $main-color;
+      bottom: 0;
+      display: block;
+      height: 0.2rem;
+      left: 0;
+      position: absolute;
+      transition: all 0.2s ease-in-out;
+      width: 0;
+    }
+    &:hover {
+      color: $dark-text-color;
+      &::before {
+        background-color: $dark-text-color;
+        width: 100%;
+      }
+    }
+  }
+  &--header {
+    &::after {
+      content: "😊";
+    }
   }
 }
 

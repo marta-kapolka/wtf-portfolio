@@ -1,0 +1,11 @@
+.l-projects {
+  display: grid;
+  gap: 2.4rem;
+}
+
+@media (min-width: $huge) {
+  .l-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

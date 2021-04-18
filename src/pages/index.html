@@ -27,91 +27,100 @@
   </head>
   <body>
     <main>
-      <section class="l-section--hero">
-        <img
-          src="../assets/img/20797803874_8055007b58_k.jpg"
-          alt="Marta's photo"
-          class="image"
-        />
-        <p class="hello">Hey there! 👋</p>
-
-        <h1 class="main-title">
-          My name is Marta and I'm an aspiring
-          <span class="main-title--special">Frontend developer</span> and a keen
-          orienteering freak.
-        </h1>
-        <p class="paragraph">
-          You might be interested in checking the list of
-          <a href="#skills" class="paragraph--link">my skills</a>. Don’t forget
-          to have a glimpse at
-          <a href="#projects" class="paragraph--link">my projects</a>. Currently
-          I’m looking for new challenges so if you have one -
-          <a href="#contact" class="paragraph--link">contact me</a> 😊
-        </p>
-        <a class="link-mail">mkapolka@gmail.com</a>
+      <section class="l-section--header">
+        <div class="l-hero-image">
+          <p class="hello">Hey there! <span class="hello--hand">👋</span></p>
+          <img
+            src="../assets/img/20797803874_8055007b58_k.jpg"
+            alt="Marta's photo"
+            class="image"
+          />
+        </div>
+        <div class="l-hero-description">
+          <h1 class="main-title">
+            My name is Marta and I'm an aspiring
+            <span class="main-title--special">Frontend developer</span> and a
+            keen orienteering freak.
+          </h1>
+          <p class="paragraph paragraph--header">
+            You might be interested in checking the list of
+            <a href="#skills" class="paragraph--link">my skills</a>. Don’t
+            forget to have a glimpse at
+            <a href="#projects" class="paragraph--link">my projects</a>.
+            Currently I’m looking for new challenges so if you have one -
+            <a href="#contact" class="paragraph--link">contact me</a>
+          </p>
+        </div>
+        <a
+          href="mailto:mkapolka@gmail.com"
+          class="link-mail link-mail--darker-background"
+          >mkapolka@gmail.com</a
+        >
       </section>
       <section class="l-section--skills" id="skills">
         <h2 class="section-title section-title--light">My skills</h2>
-        <article class="skill-list skill-list--working">
-          <h3 class="skill-list--title">Working knowledge</h3>
-          <ul class="skill-list--list">
-            <li class="skill-list--item skill-list--working-item">
-              Semantic HTML5
-            </li>
-            <li class="skill-list--item skill-list--working-item">Flexbox</li>
-            <li class="skill-list--item skill-list--working-item">Forms</li>
-            <li class="skill-list--item skill-list--working-item">SCSS</li>
-            <li class="skill-list--item skill-list--working-item">
-              JS: DOM manipulations
-            </li>
-          </ul>
-        </article>
-        <article class="skill-list skill-list--know-something">
-          <h3 class="skill-list--title">Know something about</h3>
-          <ul class="skill-list--list">
-            <li class="skill-list--item skill-list--know-something-item">
-              JavaScript ES6
-            </li>
-            <li class="skill-list--item skill-list--know-something-item">
-              React JS
-            </li>
-            <li class="skill-list--item skill-list--know-something-item">
-              NPM Scripts
-            </li>
-            <li class="skill-list--item skill-list--know-something-item">
-              Git
-            </li>
-            <li class="skill-list--item skill-list--know-something-item">
-              Working with API
-            </li>
-            <li class="skill-list--item skill-list--know-something-item">
-              CSS Grid
-            </li>
-            <li class="skill-list--item skill-list--know-something-item">
-              CSS Animations
-            </li>
-            <li class="skill-list--item skill-list--know-something-item">
-              Progressive web apps
-            </li>
-            <li class="skill-list--item skill-list--know-something-item">
-              Accessibility
-            </li>
-            <li class="skill-list--item skill-list--know-something-item">
-              BEM Methodology
-            </li>
-          </ul>
-        </article>
-        <article class="skill-list skill-list--want-to-learn">
-          <h3 class="skill-list--title">Want to learn</h3>
-          <ul class="skill-list--list">
-            <li class="skill-list--item skill-list--want-to-learn-item">
-              Typescript
-            </li>
-            <li class="skill-list--item skill-list--want-to-learn-item">
-              Firebase
-            </li>
-          </ul>
-        </article>
+        <div class="l-skills">
+          <article class="skill-list skill-list--working">
+            <h3 class="skill-list--title">Working knowledge</h3>
+            <ul class="skill-list--list">
+              <li class="skill-list--item skill-list--working-item">
+                Semantic HTML5
+              </li>
+              <li class="skill-list--item skill-list--working-item">Flexbox</li>
+              <li class="skill-list--item skill-list--working-item">Forms</li>
+              <li class="skill-list--item skill-list--working-item">SCSS</li>
+              <li class="skill-list--item skill-list--working-item">
+                JS: DOM manipulations
+              </li>
+            </ul>
+          </article>
+          <article class="skill-list skill-list--know-something">
+            <h3 class="skill-list--title">Know something about</h3>
+            <ul class="skill-list--list">
+              <li class="skill-list--item skill-list--know-something-item">
+                JavaScript ES6
+              </li>
+              <li class="skill-list--item skill-list--know-something-item">
+                React JS
+              </li>
+              <li class="skill-list--item skill-list--know-something-item">
+                NPM Scripts
+              </li>
+              <li class="skill-list--item skill-list--know-something-item">
+                Git
+              </li>
+              <li class="skill-list--item skill-list--know-something-item">
+                Working with API
+              </li>
+              <li class="skill-list--item skill-list--know-something-item">
+                CSS Grid
+              </li>
+              <li class="skill-list--item skill-list--know-something-item">
+                CSS Animations
+              </li>
+              <li class="skill-list--item skill-list--know-something-item">
+                Progressive web apps
+              </li>
+              <li class="skill-list--item skill-list--know-something-item">
+                Accessibility
+              </li>
+              <li class="skill-list--item skill-list--know-something-item">
+                BEM Methodology
+              </li>
+            </ul>
+          </article>
+          <article class="skill-list skill-list--want-to-learn">
+            <h3 class="skill-list--title">Want to learn</h3>
+            <ul class="skill-list--list">
+              <li class="skill-list--item skill-list--want-to-learn-item">
+                Typescript
+              </li>
+              <li class="skill-list--item skill-list--want-to-learn-item">
+                Firebase
+              </li>
+            </ul>
+          </article>
+        </div>
       </section>
       <section class="l-section--projects" id="projects">
         <h2 class="section-title">Recent projects</h2>
@@ -136,71 +145,40 @@
           />
         </svg>
         <!-- reusable svg github icon - end -->
-
-        <article class="project">
-          <svg
-            class="project--icon"
-            width="21"
-            height="21"
-            viewBox="0 0 21 21"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <use href="#github-icon-white" />
-          </svg>
-          <h3 class="project--description">
-            <span class="project--label">project:</span
-            ><span class="project--title">PWS-info-page</span>
-          </h3>
-          <p class="project--description">
-            <span class="project--label">description:</span
-            ><span class="project--details"
-              >website of Silesian Voivodeship Trophy in Recreational
-              Orienteering</span
+        <div class="l-projects">
+          <article class="project">
+            <svg
+              class="project--icon"
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-          </p>
-          <br />
-          <p class="project--description">
-            <span class="project--label">demo:</span
-            ><span class="project--link">see here</span>
-          </p>
-          <p class="project--description">
-            <span class="project--label">github:</span
-            ><span class="project--link">source code</span>
-          </p>
-        </article>
-        <article class="project">
-          <svg
-            class="project--icon"
-            width="21"
-            height="21"
-            viewBox="0 0 21 21"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <use href="#github-icon-white" />
-          </svg>
-          <h3 class="project--description">
-            <span class="project--label">project:</span
-            ><span class="project--title">PWS-info-page</span>
-          </h3>
-          <p class="project--description">
-            <span class="project--label">description:</span
-            ><span class="project--details"
-              >website of Silesian Voivodeship Trophy in Recreational
-              Orienteering</span
-            >
-          </p>
-          <br />
-          <p class="project--description">
-            <span class="project--label">demo:</span
-            ><span class="project--link">see here</span>
-          </p>
-          <p class="project--description">
-            <span class="project--label">github:</span
-            ><span class="project--link">source code</span>
-          </p>
-        </article>
+              <use href="#github-icon-white" />
+            </svg>
+            <h3 class="project--description">
+              <span class="project--label">project:</span
+              ><span class="project--title">PWS-info-page</span>
+            </h3>
+            <p class="project--description">
+              <span class="project--label">description:</span
+              ><span class="project--details"
+                >website of Silesian Voivodeship Trophy in Recreational
+                Orienteering</span
+              >
+            </p>
+            <br />
+            <p class="project--description">
+              <span class="project--label">demo:</span
+              ><span class="project--link">see here</span>
+            </p>
+            <p class="project--description">
+              <span class="project--label">github:</span
+              ><span class="project--link">source code</span>
+            </p>
+          </article>
+        </div>
       </section>
       <section class="l-section--contact" id="contact">
         <h2 class="section-title">Contact me</h2>
@@ -209,48 +187,65 @@
         </p>
         <div class="contact">
           <div class="media">
-            <a class="media--link"
-              ><svg
+            <a class="media--link" href="https://github.com/marta-kapolka">
+              <!-- github -->
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
               >
+                <title>Link do githuba</title>
                 <path
+                  class="media--icon"
                   d="M12 0C5.4 0 0 5.4 0 12 0 17.2 3.4 21.7 8 23.3 8.7 23.5 8.6 23 8.6 22.7V20.6C4.9 21.1 4.8 18.7 4.5 18.3 4 17.4 2.9 17.2 3.2 16.8 4.1 16.4 4.9 16.9 5.9 18.4 6.6 19.4 8 19.2 8.7 19.1 8.8 18.4 9.2 17.9 9.6 17.4 5.8 16.7 4.3 14.4 4.3 11.7 4.3 10.4 4.7 9.2 5.6 8.2 5 6.6 5.6 5.2 5.7 5 7.2 4.8 8.9 6.1 9 6.2 9.9 5.9 10.9 5.8 12 5.8 13.2 5.8 14.2 5.9 15.1 6.2 15.4 6 16.9 4.9 18.3 5 18.4 5.2 19 6.6 18.5 8.2 19.3 9.2 19.8 10.4 19.8 11.7 19.8 14.5 18.2 16.8 14.4 17.4 14.7 17.7 15 18.1 15.2 18.5 15.3 19 15.4 19.4 15.4 19.9V22.9C15.5 23.1 15.4 23.4 15.8 23.4 20.6 21.8 24 17.3 24 12 24 5.4 18.6 0 12 0Z"
-                  fill="#4DA8FF"
+                  fill="#1176d4"
                 /></svg
             ></a>
-            <a class="media--link"
-              ><svg
+            <a
+              class="media--link"
+              href="https://www.flickr.com/photos/135726764@N02"
+            >
+              <!-- flickr -->
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
               >
+                <title>Link do flickra</title>
                 <path
+                  class="media--icon"
                   d="M24 12C24 11.8 24 11.6 24 11.4 24 9.9 24 8.5 23.9 7 23.8 5.1 23.4 3.4 22 2 20.6 0.6 18.9 0.2 17 0.1 15.5 0 14.1 0 12.6 0 12.4 0 12.2 0 12 0 11.8 0 11.6 0 11.4 0 9.9 0 8.5 0 7 0.1 5.1 0.2 3.4 0.6 2 2 0.6 3.4 0.2 5.1 0.1 7 0 8.5 0 9.9 0 11.4 0 11.6 0 11.8 0 12 0 12.2 0 12.4 0 12.6 0 14.1 0 15.5 0.1 17 0.2 18.9 0.6 20.6 2 22 3.4 23.4 5.1 23.8 7 23.9 8.5 24 9.9 24 11.4 24 11.6 24 11.8 24 12 24 12.2 24 12.4 24 12.6 24 14.1 24 15.5 24 17 23.9 18.9 23.8 20.6 23.4 22 22 23.4 20.6 23.8 18.9 23.9 17 24 15.5 24 14.1 24 12.7 24 12.5 24 12.2 24 12ZM17 16C14.8 16 13 14.2 13 12 13 9.8 14.8 8 17 8 19.2 8 21 9.8 21 12 21 14.2 19.2 16 17 16ZM3.1 12C3.1 9.8 4.9 8 7.1 8 9.3 8 11.1 9.8 11.1 12 11.1 14.2 9.3 16 7.1 16 4.9 16 3.1 14.2 3.1 12Z"
-                  fill="#4DA8FF"
+                  fill="#1176d4"
                 /></svg
             ></a>
-            <a class="media--link"
-              ><svg
+            <a
+              class="media--link"
+              href="https://www.facebook.com/profile.php?id=100003112302630"
+            >
+              <!-- facebook -->
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
               >
+                <title>Link do facebooka</title>
                 <path
+                  class="media--icon"
                   d="M24 0H0V24H10.1V16H7.1V12.6H10.1V9.9C10.1 6.9 11.9 5.3 14.7 5.3 16 5.3 17.3 5.5 17.3 5.5V8.4H15.8C14.3 8.4 13.9 9.4 13.9 10.3V12.6H17.2L16.7 16H13.9V24H24V0Z"
-                  fill="#4DA8FF"
+                  fill="#1176d4"
                 /></svg
             ></a>
           </div>
           <div class="contact__link-container">
-            <a href="" class="link-mail">mkapolka@gmail.com</a>
+            <a href="mailto:mkapolka@gmail.com" class="link-mail"
+              >mkapolka@gmail.com</a
+            >
           </div>
         </div>
       </section>

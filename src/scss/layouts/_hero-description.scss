@@ -1,0 +1,27 @@
+.l-hero-description {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+@media (min-width: $huge) {
+  %header-brackets {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -11.2rem);
+  }
+  .l-hero-description {
+    position: relative;
+    &::before {
+      @extend %header-brackets;
+      content: url(../assets/svg/curly-bracket-open.svg);
+      left: -12rem;
+    }
+    &::after {
+      @extend %header-brackets;
+      content: url(../assets/svg/curly-bracket-close.svg);
+      right: -12rem;
+    }
+  }
+}
