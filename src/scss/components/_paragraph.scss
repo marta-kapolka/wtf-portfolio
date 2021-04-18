@@ -2,7 +2,7 @@
   color: $default-text-color;
   font-size: $xs-text-size;
   line-height: 3.2rem;
-  max-width: 80rem;
+  max-width: 82rem;
   padding: 3.2rem 0 5.6rem 0;
   text-align: center;
   &--link {
@@ -32,6 +32,7 @@
   &--header {
     &::after {
       content: "😊";
+      margin-left: 0.3rem;
     }
   }
 }
