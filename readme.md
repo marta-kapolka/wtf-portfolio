@@ -4,7 +4,7 @@
 
 My personal portfolio presenting my previous projects.
 
-LIVE: [Portfolio - Marta Kapołka](marta-kapolka.github.io/wtf-portfolio/)
+LIVE: [Portfolio - Marta Kapołka](https://marta-kapolka.github.io/wtf-portfolio/)
 
 ![page preview](/src/assets/img/portfolio_screen.png)
 
